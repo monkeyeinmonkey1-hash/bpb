@@ -23,7 +23,7 @@ public class RightClickMixin {
 
         KeyMapping useKey = client.options.keyUse;
 
-        long handle = client.getWindow().getWindow();
+        long handle = client.getWindow().handle();
 
         boolean rightHeld = GLFW.glfwGetMouseButton(
                 handle,
