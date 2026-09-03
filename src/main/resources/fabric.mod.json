@@ -13,13 +13,12 @@
     "client": [
       "betterplacebind.BetterPlaceBind"
     ]
-  },
-  "mixins": [
-    {
-      "config": "better-place-bind.client.mixins.json",
-      "environment": "client"
-    }
-  ],
+"mixins": [
+  {
+    "config": "modid.mixins.json",
+    "environment": "client"
+  }
+],
   "depends": {
     "fabricloader": ">=0.19.0",
     "minecraft": "~26.2",
