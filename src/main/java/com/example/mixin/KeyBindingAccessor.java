@@ -1,23 +1,14 @@
-/*
- * Decompiled with CFR 0.152.
- * 
- * Could not load the following classes:
- *  net.minecraft.class_304
- *  org.spongepowered.asm.mixin.Mixin
- *  org.spongepowered.asm.mixin.gen.Accessor
- */
-package betterplacebind.mixin;
+package com.example.mixin;
 
-import net.minecraft.class_304;
+import net.minecraft.client.option.KeyBinding;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(value={class_304.class})
+@Mixin(KeyBinding.class)
 public interface KeyBindingAccessor {
-    @Accessor(value="field_1661")
-    public int getTimesPressed();
+    @Accessor("timesPressed")
+    int getTimesPressed();
 
-    @Accessor(value="field_1661")
-    public void setTimesPressed(int var1);
+    @Accessor("timesPressed")
+    void setTimesPressed(int timesPressed);
 }
-
