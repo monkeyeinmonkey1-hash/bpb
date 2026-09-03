@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "betterplacebind.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "RightClickMixin",
+    "KeyBindingAccessor"
+  ]
+}
